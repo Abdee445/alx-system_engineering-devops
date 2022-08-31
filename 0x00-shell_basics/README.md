@@ -1,1 +1,3 @@
-executable file with script that prints the absolute path name of the current working directory
+executable file with script that prints the absolute path name of the current working directory...
+well, i figured ill just include some other executable files within this directory.
+This should be fun!
