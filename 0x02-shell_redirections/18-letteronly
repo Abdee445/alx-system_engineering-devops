@@ -1,2 +1,2 @@
 #!/bin/bash
-grep --line-buffered[[:alpha:]]* /etc/ssh/sshd_config
+grep -x [[:alpha:]]* /etc/ssh/sshd_config
