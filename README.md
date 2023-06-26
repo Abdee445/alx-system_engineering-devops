@@ -1,2 +1,1 @@
-# alx-system_engineering-devops
-Shell basics hehe
+This is a bash script

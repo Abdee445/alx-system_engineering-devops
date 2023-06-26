@@ -1,1 +1,1 @@
-Various shell variables and expansion manipulation scripts
+This is a README.md file for this project
