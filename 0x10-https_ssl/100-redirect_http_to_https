@@ -33,19 +33,19 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend  abdee445-frontend-http
+frontend  muhammadthani-frontend-http
         bind *:80
         mode http
 	http-request set-header X-Forwarded-Proto http
-        default_backend abdee445
+        default_backend muhammadthani-backend
 
-frontend abdee445-frontend-https
+frontend muhammadthani-frontend-https
 	bind *:443 ssl crt /etc/haproxy/certs/www.bufferoverflow.tech.pem
 	http-request set-header X-Forwarded-Proto https
 	http-request redirect scheme https code 301 unless { ssl_fc }
-	default_backend abdee445
+	default_backend muhammadthani-backend
 
-backend	 abdee445-backend
+backend muhammadthani-backend
         balance roundrobin
         server 100953-web-01 54.164.125.248:80 check
         server 100953-web-02 52.91.150.91:80 check
