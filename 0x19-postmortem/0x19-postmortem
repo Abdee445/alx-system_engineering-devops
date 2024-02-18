@@ -1,0 +1,43 @@
+Issue Summary:
+
+Duration:
+Start Time: February 17, 2024, 10:00 AM (UTC-5)
+End Time: February 17, 2024, 12:30 PM (UTC-5)
+Impact:
+The outage affected our primary web application, rendering it completely inaccessible to users.
+Approximately 80% of our users experienced service disruption during this time, resulting in frustration and potential loss of business.
+Root Cause:
+
+The root cause of the outage was identified as a misconfiguration in the load balancer settings, leading to an overload on one of the backend servers.
+
+Timeline:
+
+10:00 AM: Issue detected through monitoring alerts indicating a spike in server response times.
+10:05 AM: Engineering team notified automatically via alert system.
+10:10 AM: Initial investigation focused on backend server logs and database performance metrics.
+10:30 AM: Assumed root cause to be a database bottleneck due to increased traffic.
+10:45 AM: Database team escalated the issue to network infrastructure team for further investigation.
+11:00 AM: Network team identified misconfigured load balancer settings causing uneven distribution of traffic.
+11:30 AM: Load balancer settings adjusted to evenly distribute traffic across backend servers.
+12:00 PM: Service fully restored as traffic balanced properly.
+Root Cause and Resolution:
+
+Root Cause Explanation:
+The misconfiguration in the load balancer resulted in one backend server receiving significantly more traffic than others, causing it to become overwhelmed and unresponsive.
+Resolution Details:
+Adjustments were made to the load balancer settings to evenly distribute traffic across all backend servers, alleviating the overload on any single server.
+Corrective and Preventative Measures:
+
+Improvements/Fixes:
+Implement regular audits of load balancer configurations to prevent similar misconfigurations.
+Enhance monitoring systems to provide more granular insights into server traffic distribution.
+Tasks to Address the Issue:
+Conduct a comprehensive review of load balancer configurations to identify any other potential misconfigurations.
+Implement automated alerts for load balancer performance metrics to detect anomalies in traffic distribution.
+Schedule regular training sessions for engineering teams to stay updated on best practices for load balancer management.
+Document the incident and share lessons learned with relevant teams to improve incident response and resolution times in the future.
+By implementing these corrective measures and addressing the identified tasks, we aim to minimize the likelihood of similar outages occurring in the future and ensure a more resilient and reliable web application for our users.
+
+
+
+
